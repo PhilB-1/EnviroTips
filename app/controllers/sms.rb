@@ -9,9 +9,11 @@ post '/sms' do
 
   @client = Twilio::REST::Client.new ENV['ACCOUNT_SID'], ENV['AUTH_TOKEN']
 
-  @message = @client.messages.create(
+  @message = @client.messages.create({
     to: "+13235733073",
     from: "+15103533275",
     body: msg
-  )
+  })
+
+  redirect '/'
 end
