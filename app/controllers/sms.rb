@@ -7,7 +7,7 @@ post '/sms' do
   msg = "Envirotip:" + tip
 
 
-  @client = Twilio::REST::Client.new ACCOUNT_SID, AUTH_TOKEN
+  @client = Twilio::REST::Client.new ENV['ACCOUNT_SID'], ENV['AUTH_TOKEN']
 
   @message = @client.messages.create(
     to: "+13235733073",
