@@ -1,0 +1,33 @@
+body {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+  .restaurant-box {
+  border: 1px solid black;
+  margin: 0px 0px 4px 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+.review-box {
+  border: 1px solid black;
+  margin: 0px 4px 4px 4px;
+  padding: 3px;
+  }
+
+h1 a {
+  text-decoration: none;
+  color: red;
+  font-family: comic-sans;
+}
+
+#welcome {
+  float: right;
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
