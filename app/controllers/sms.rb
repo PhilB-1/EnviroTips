@@ -3,7 +3,7 @@ get '/sms' do
 end
 
 post '/sms' do
-  tip = Tips.find(rand(1..(Tips.all.length)))
+  tip = Tip.find(rand(1..(Tips.all.length)))
   msg = "Envirotip:" + tip
 
 
