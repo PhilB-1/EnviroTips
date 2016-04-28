@@ -1,0 +1,17 @@
+<h2 class="align-center">Create a New Tip</h2>
+<form method="post" action="/tips" class="align-center">
+  <label>Category</label><br>
+  <% i=0%>
+  <% @categories.each do |cat| %>
+  <% i += 1 %>
+  <input name="tip[category_id]" type="radio" value="<%= i %>"><%= cat.name %><br>
+  <%end%>
+
+  <label>Tip Title</label><br>
+  <input type="text" name="tip[title]"><br>
+  <label>Tip Description</label><br>
+  <textarea name="tip[description]" rows="7" cols="60">
+  </textarea><br>
+  <input type="submit" value="Submit">
+
+</form>

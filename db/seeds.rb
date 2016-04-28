@@ -4,8 +4,9 @@ Category.delete_all
 
 
 User.create!(
-                :email      => master@envirotip.com,
-                :password   => 'pass' )
+                :email      => 'master@envirotip.com',
+                :password   => 'pass',
+                :phone => "3235733073" )
 
 Tip.create!(
     :category_id => 1,
