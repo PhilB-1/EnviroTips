@@ -1,0 +1,16 @@
+<h2 id="tip-cat" class="left-align"><%= @category %> Tips</h2>
+
+<a href="/tips/new" id="create-tip" class="right-align">Create a New Tip!</a>
+
+<ul>
+
+  <% @tips.each do |tip|%>
+  <article>
+    <strong><%= tip.title %></strong><br>
+    <!-- <ul> -->
+      <%= tip.description %><br>
+      <a href=<%= "/categories/#{tip.category_id}/tips" %>>Edit</a>
+    <!-- </ul> -->
+  </article>
+    <% end %>
+</ul>

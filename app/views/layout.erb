@@ -19,16 +19,26 @@
 </head>
 <body>
   <header>
-    <h1><a href="/">Envirotip!</a></h1>
-    <!-- <div id="welcome">
-    <% if session[:user_id] %>
+    <h1 class="left-align"><a href="/">Envirotip!</a></h1>
+    <div id="welcome" class="right-align">
+    <% if session[:user_id] == 1 %>
+      <a href="/sms">Send SMS</a>
       <p>Welcome: <%= session[:email] %> |
       <a href="/sessions/clear">Logout</a></p>
     <% else %>
-      <a href="/users/new">Register</a> |
+      <!-- <a href="/users/new">Register</a> | -->
       <a href="/sessions/new">Login</a>
     <% end %>
-    <div> -->
+    </div>
+    <nav class="left-align">
+      <h2><button type="button">Tips</button></h2>
+      <h4>
+        <button type="button"><a href="/tips">All</a></button>
+        <button type="button"><a href="/categories/1/tips">Energy</a></button>
+        <button type="button"><a href="/categories/2/tips">Water</a></button>
+        <button type="button"><a href="/categories/3/tips">Waste</a></button>
+      </h4>
+    </nav>
   </header>
   <%= yield %>
 </body>

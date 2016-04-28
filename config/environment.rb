@@ -28,6 +28,9 @@ require 'bcrypt'
 require 'twilio-ruby'
 
 # Some helper constants for path-centric logic
+ACCOUNT_SID = "AC6bd053c999d56e5d62f4c67db9d36520"
+AUTH_TOKEN = "5a4186d14f99607b489dabc75d44f688"
+
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
 APP_NAME = APP_ROOT.basename.to_s

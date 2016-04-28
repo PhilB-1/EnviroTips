@@ -1,0 +1,16 @@
+<h2 class="align-center">Subscribe Now!</h2>
+
+<!-- <p><%= @errors %></p> -->
+
+<form class="align-center" action='/users' method='post'>
+  <label>Email:</label><br>
+  <input name="user[email]" type="text" placeholder="email"><br>
+  <label>Phone:</label><br>
+  <input name="user[phone]" type="text" placeholder="phone"><br>
+  <label>Monthly Kilowatts Used:</label><br>
+  <input name="user[kilowatts]" type="text" placeholder="kilowatts"><br>
+  <label>Monthly Gallons Used:</label><br>
+  <input name="user[gallons]" type="text" placeholder="gallons"><br>
+  <input type="submit" value="Create Account">
+
+</form>

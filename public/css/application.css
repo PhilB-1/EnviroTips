@@ -1,9 +1,45 @@
 body {
-  margin-left: 4px;
-  margin-right: 4px;
+  background-color: #09cdf6;
+  font-family: comic sans ms;
 }
 
-  .restaurant-box {
+header {
+  background-color: #a1d700;
+}
+
+.left-align {
+  margin-left: 10px;
+}
+
+.right-align {
+  margin-right: 10px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+nav h2 {
+  margin-bottom: 0;
+}
+
+nav h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+}
+
+#tip-cat {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#create-tip {
+  float: right;
+  margin-top: 20px;
+}
+
+/*.restaurant-box {
   border: 1px solid black;
   margin: 0px 0px 4px 4px;
   display: inline-block;
@@ -14,12 +50,12 @@ body {
   border: 1px solid black;
   margin: 0px 4px 4px 4px;
   padding: 3px;
-  }
+  }*/
 
 h1 a {
   text-decoration: none;
-  color: red;
-  font-family: comic-sans;
+  color: white;
+
 }
 
 #welcome {
@@ -30,4 +66,31 @@ h1 a {
 h1 {
   display: inline-block;
   vertical-align: middle;
+}
+
+article {
+  background-color: white;
+  margin-bottom: 6px;
+  border: 1px solid black;
+  margin-right: 50px;
+  padding: 3px;
+}
+
+#welcome-message {
+  background-color: white;
+  margin-bottom: 6px;
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+#test {
+  text-align: center;
 }
